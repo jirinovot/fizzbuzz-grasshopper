@@ -1,4 +1,4 @@
 function fizzbuzz(a) {
-  throw new Error("Fizz-what?");
+  return a;
 }
 module.exports = fizzbuzz;

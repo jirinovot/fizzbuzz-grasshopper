@@ -1,22 +1,26 @@
-function fizzbuzz(a) {
+/**
+ *
+ * @param {number} inputNumber positive integer
+ */
+function fizzbuzz(inputNumber) {
   let result = "";
 
-  if (isFizz(a)) {
+  if (isFizz(inputNumber)) {
     result += "fizz";
   }
-  if (isBuzz(a)) {
+  if (isBuzz(inputNumber)) {
     result += "buzz";
   }
 
-  return result === "" ? a : result;
+  return result === "" ? inputNumber : result;
 }
 
-function isFizz(a) {
-  return a % 3 == 0;
+function isFizz(inputNumber) {
+  return inputNumber % 3 == 0;
 }
 
-function isBuzz(a) {
-  return a % 5 == 0;
+function isBuzz(inputNumber) {
+  return inputNumber % 5 == 0;
 }
 
 module.exports = fizzbuzz;

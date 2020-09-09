@@ -11,3 +11,7 @@ test("fizzbuzz of 3 is fizz", () => {
 test("fizzbuzz of 5 is buzz", () => {
   expect(fizzbuzz(5)).toBe("buzz");
 });
+
+test("fizzbuzz of 15 is fizzbuzz", () => {
+  expect(fizzbuzz(15)).toBe("fizzbuzz");
+});

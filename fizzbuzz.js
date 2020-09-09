@@ -1,15 +1,14 @@
 function fizzbuzz(a) {
-  if (isFizz(a) && isBuzz(a)) {
-    return "fizzbuzz";
-  }
+  let result = "";
+
   if (isFizz(a)) {
-    return "fizz";
+    result += "fizz";
   }
   if (isBuzz(a)) {
-    return "buzz";
+    result += "buzz";
   }
 
-  return a;
+  return result === "" ? a : result;
 }
 
 function isFizz(a) {
